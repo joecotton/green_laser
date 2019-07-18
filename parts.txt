@@ -1,0 +1,7 @@
+SOT-23 "2X" marking: MMBT4401LT1 or 2N4401 or MMBT4401 NPN General Purpose BJT
+40V 0.6A
+https://www.onsemi.com/pub/Collateral/MMBT4401LT1-D.PDF
+
+SOT-23 "491" marking: FMMT491 NPN Medium Power Transistor
+60V 1.0A (2.0A peak)
+https://www.diodes.com/assets/Datasheets/FMMT491.pdf
