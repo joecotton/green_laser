@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:Battery BT1
 U 1 1 5D33944D
-P 2450 3650
-F 0 "BT1" H 2558 3696 50  0000 L CNN
-F 1 "3V" H 2558 3605 50  0000 L CNN
-F 2 "" V 2450 3710 50  0001 C CNN
-F 3 "~" V 2450 3710 50  0001 C CNN
-	1    2450 3650
+P 2450 3900
+F 0 "BT1" H 2558 3946 50  0000 L CNN
+F 1 "3V" H 2558 3855 50  0000 L CNN
+F 2 "" V 2450 3960 50  0001 C CNN
+F 3 "~" V 2450 3960 50  0001 C CNN
+	1    2450 3900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -60,13 +60,13 @@ $EndComp
 $Comp
 L Diode_Laser:PLT5_510 LD1
 U 1 1 5D341E96
-P 4350 2950
-F 0 "LD1" H 4300 3235 50  0000 C CNN
-F 1 "PLT5_510" H 4300 3144 50  0000 C CNN
-F 2 "OptoDevice:LaserDiode_TO38ICut-3" H 4350 2775 50  0001 C CNN
-F 3 "http://www.osram-os.com/Graphics/XPic2/00227065_0.pdf/PLT5%20510.pdf" H 4380 2750 50  0001 C CNN
-	1    4350 2950
-	1    0    0    -1  
+P 4250 2950
+F 0 "LD1" H 4200 3235 50  0000 C CNN
+F 1 "PLT5_510" H 4200 3144 50  0000 C CNN
+F 2 "OptoDevice:LaserDiode_TO38ICut-3" H 4250 2775 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic2/00227065_0.pdf/PLT5%20510.pdf" H 4280 2750 50  0001 C CNN
+	1    4250 2950
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:LED D1
@@ -135,11 +135,11 @@ F 3 "~" H 3500 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 3850 2450 4850
+	2450 4100 2450 4850
 Wire Wire Line
 	2450 4850 2550 4850
 Wire Wire Line
-	2450 2300 2450 3450
+	2450 2300 2450 3500
 $Comp
 L Device:R R3
 U 1 1 5D385AB1
@@ -257,4 +257,9 @@ Wire Wire Line
 Wire Wire Line
 	5200 2800 5200 2950
 Connection ~ 5200 2950
+Wire Wire Line
+	3100 3500 2450 3500
+Connection ~ 2450 3500
+Wire Wire Line
+	2450 3500 2450 3700
 $EndSCHEMATC
