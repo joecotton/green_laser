@@ -1,0 +1,260 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 "GLP015A"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NPN_BEC Q1
+U 1 1 5D3375B5
+P 3800 4300
+F 0 "Q1" H 3991 4346 50  0000 L CNN
+F 1 "2X" H 3991 4255 50  0000 L CNN
+F 2 "" H 4000 4400 50  0001 C CNN
+F 3 "~" H 3800 4300 50  0001 C CNN
+	1    3800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 5D33944D
+P 2450 3650
+F 0 "BT1" H 2558 3696 50  0000 L CNN
+F 1 "3V" H 2558 3605 50  0000 L CNN
+F 2 "" V 2450 3710 50  0001 C CNN
+F 3 "~" V 2450 3710 50  0001 C CNN
+	1    2450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D33C271
+P 2750 4850
+F 0 "SW1" H 2750 5135 50  0000 C CNN
+F 1 "SW_Push" H 2750 5044 50  0000 C CNN
+F 2 "" H 2750 5050 50  0001 C CNN
+F 3 "~" H 2750 5050 50  0001 C CNN
+	1    2750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_Photo_NPN Q3
+U 1 1 5D33E071
+P 5300 2600
+F 0 "Q3" H 5123 2646 50  0000 R CNN
+F 1 "Q_Photo_NPN" H 5123 2555 50  0000 R CNN
+F 2 "" H 5500 2700 50  0001 C CNN
+F 3 "~" H 5300 2600 50  0001 C CNN
+	1    5300 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Diode_Laser:PLT5_510 LD1
+U 1 1 5D341E96
+P 4350 2950
+F 0 "LD1" H 4300 3235 50  0000 C CNN
+F 1 "PLT5_510" H 4300 3144 50  0000 C CNN
+F 2 "OptoDevice:LaserDiode_TO38ICut-3" H 4350 2775 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic2/00227065_0.pdf/PLT5%20510.pdf" H 4380 2750 50  0001 C CNN
+	1    4350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5D34657B
+P 3100 4100
+F 0 "D1" V 3139 4178 50  0000 L CNN
+F 1 "LED" V 3048 4178 50  0000 L CNN
+F 2 "" H 3100 4100 50  0001 C CNN
+F 3 "~" H 3100 4100 50  0001 C CNN
+	1    3100 4100
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D34955F
+P 3100 4550
+F 0 "R2" H 3170 4596 50  0000 L CNN
+F 1 "330" H 3170 4505 50  0000 L CNN
+F 2 "" V 3030 4550 50  0001 C CNN
+F 3 "~" H 3100 4550 50  0001 C CNN
+	1    3100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D349A1E
+P 5200 4600
+F 0 "R5" H 5270 4646 50  0000 L CNN
+F 1 "2k" H 5270 4555 50  0000 L CNN
+F 2 "" V 5130 4600 50  0001 C CNN
+F 3 "~" H 5200 4600 50  0001 C CNN
+	1    5200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D34A00C
+P 5200 4150
+F 0 "R4" H 5270 4196 50  0000 L CNN
+F 1 "10k" H 5270 4105 50  0000 L CNN
+F 2 "" V 5130 4150 50  0001 C CNN
+F 3 "~" H 5200 4150 50  0001 C CNN
+	1    5200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D34A87A
+P 3750 3500
+F 0 "C2" H 3865 3546 50  0000 L CNN
+F 1 "C" H 3865 3455 50  0000 L CNN
+F 2 "" H 3788 3350 50  0001 C CNN
+F 3 "~" H 3750 3500 50  0001 C CNN
+	1    3750 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D34B819
+P 3500 4600
+F 0 "C1" H 3615 4646 50  0000 L CNN
+F 1 "C" H 3615 4555 50  0000 L CNN
+F 2 "" H 3538 4450 50  0001 C CNN
+F 3 "~" H 3500 4600 50  0001 C CNN
+	1    3500 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3850 2450 4850
+Wire Wire Line
+	2450 4850 2550 4850
+Wire Wire Line
+	2450 2300 2450 3450
+$Comp
+L Device:R R3
+U 1 1 5D385AB1
+P 3500 3750
+F 0 "R3" H 3570 3796 50  0000 L CNN
+F 1 "1k" H 3570 3705 50  0000 L CNN
+F 2 "" V 3430 3750 50  0001 C CNN
+F 3 "~" H 3500 3750 50  0001 C CNN
+	1    3500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4850 3100 4850
+Wire Wire Line
+	3500 4850 3500 4750
+Wire Wire Line
+	3500 3900 3500 4000
+Wire Wire Line
+	3600 4300 3500 4300
+Connection ~ 3500 4300
+Wire Wire Line
+	3500 4300 3500 4450
+Wire Wire Line
+	3100 4700 3100 4850
+Connection ~ 3100 4850
+Wire Wire Line
+	3100 4850 3500 4850
+Wire Wire Line
+	3100 4250 3100 4400
+$Comp
+L Device:R R1
+U 1 1 5D38F61F
+P 3100 3250
+F 0 "R1" H 3170 3296 50  0000 L CNN
+F 1 "10k" H 3170 3205 50  0000 L CNN
+F 2 "" V 3030 3250 50  0001 C CNN
+F 3 "~" H 3100 3250 50  0001 C CNN
+	1    3100 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4100 3900 3500
+Wire Wire Line
+	3900 2950 4050 2950
+Connection ~ 3900 3500
+Wire Wire Line
+	3900 3500 3900 2950
+Wire Wire Line
+	3100 3100 3100 2950
+Wire Wire Line
+	3100 2950 3900 2950
+Connection ~ 3900 2950
+Wire Wire Line
+	3900 4500 3900 4850
+Wire Wire Line
+	3900 4850 3500 4850
+Connection ~ 3500 4850
+Connection ~ 3900 4850
+Wire Wire Line
+	5200 4300 5200 4450
+Wire Wire Line
+	5200 4850 5200 4750
+Wire Wire Line
+	5200 4000 5200 2950
+Wire Wire Line
+	5200 2950 4950 2950
+Connection ~ 4950 2950
+Wire Wire Line
+	4950 2950 4550 2950
+Wire Wire Line
+	4950 2950 4950 4300
+Wire Wire Line
+	4550 4500 4550 4850
+Wire Wire Line
+	4950 4300 4850 4300
+$Comp
+L Device:Q_NPN_BEC Q2
+U 1 1 5D333544
+P 4650 4300
+F 0 "Q2" H 4841 4346 50  0000 L CNN
+F 1 "491" H 4841 4255 50  0000 L CNN
+F 2 "" H 4850 4400 50  0001 C CNN
+F 3 "~" H 4650 4300 50  0001 C CNN
+	1    4650 4300
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4550 4850
+Wire Wire Line
+	4550 4850 3900 4850
+Wire Wire Line
+	4550 4850 5200 4850
+Wire Wire Line
+	3100 3400 3100 3500
+Wire Wire Line
+	3600 3500 3500 3500
+Connection ~ 3100 3500
+Wire Wire Line
+	3100 3500 3100 3950
+Wire Wire Line
+	3500 3600 3500 3500
+Connection ~ 3500 3500
+Wire Wire Line
+	3500 3500 3100 3500
+Wire Wire Line
+	4550 4100 4550 4000
+Wire Wire Line
+	4550 4000 3500 4000
+Connection ~ 3500 4000
+Wire Wire Line
+	3500 4000 3500 4300
+Wire Wire Line
+	2450 2300 5200 2300
+Wire Wire Line
+	5200 2300 5200 2400
+Wire Wire Line
+	5200 2800 5200 2950
+Connection ~ 5200 2950
+$EndSCHEMATC
